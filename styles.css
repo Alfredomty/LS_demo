@@ -15,3 +15,20 @@ body{
 header{
     background: var(--nav-bg);
 }
+
+.nav_container{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: auto;
+}
+
+.signin{
+    color: var(--text-color);
+    margin-left: auto;
+}
