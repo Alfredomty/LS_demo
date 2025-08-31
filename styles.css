@@ -13,6 +13,7 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: var(--main-bg);
+    color: var(--text-color)
 }
 
 header{
@@ -22,6 +23,7 @@ header{
 .header__container,.hero__container,.now-playing__container{
     max-width: 1620px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 .header__container{
@@ -53,7 +55,7 @@ header{
 .hero{
     position: relative;
     background: var(--main-bg);
-    padding: 3em 0;
+    padding: 2em 0 ;
     width: 100%;
 }
 
@@ -61,7 +63,7 @@ header{
     display: block;
 }
 
-.hero picture, .hero img{
+.hero img{
     width: 100%;
     height: auto;
     display: block;
@@ -75,7 +77,7 @@ header{
 }
 
 .np_header{ margin: 1em 0; }
-.np_header h2{ color: var(--text-color); margin: 0; }
+.np_header h2{ margin: 0; }
 
 .np_cardrows{
     display: flex;
@@ -86,7 +88,7 @@ header{
 .np_card-poster{
     flex: 0 0 34%;           
     overflow: hidden;
-    border-radius: var(--img-radius);
+    /* border-radius: var(--img-radius); */
 }
 
 .np_col {
@@ -99,7 +101,7 @@ header{
 .np_col .np_card{
     flex: 1 1 0;
     overflow: hidden;
-    border-radius: var(--img-radius);
+    /* border-radius: var(--img-radius); */
 }
 
 .img-responsive{
@@ -109,22 +111,13 @@ header{
     object-fit: cover;
     border-radius: var(--img-radius);
 }
+.np_card-poster{ aspect-ratio: 2 / 3; }
+.np_col .np_card{ aspect-ratio: 16 / 9; }
 
 @media (max-width: 580px){
-    .np_cardrows{
-        flex-direction: column;
-    }
-
-    .np_card-poster{
-        flex-basis: auto;
-    }
-
-    .np_col .np_card{
-        flex: initial;        
-    }
-
-    .img-responsive{
-        height: auto;
-    }
+    .np_cardrows{flex-direction: column;}
+    .np_card-poster{flex-basis: auto;}
+    .np_col .np_card{flex: initial;}
+    .img-responsive{height: 100%;}
 }
 
