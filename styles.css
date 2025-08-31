@@ -78,31 +78,28 @@ header{
 .np_header h2{ color: var(--text-color); margin: 0; }
 
 .np_cardrows{
-    display: grid;
-    grid-template-columns: 1fr 1.8fr;
+    display: flex;
     gap: 16px;
     align-items: stretch;
 }
-.np_card{
+
+.np_card-poster{
+    flex: 0 0 34%;           
     overflow: hidden;
+    border-radius: var(--img-radius);
 }
 
-/* Left */
-.np_card:nth-child(1){
-    grid-column: 1;
-    grid-row: 1 / span 2;
+.np_col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex : 1 1 auto;
 }
 
-/* top-right */
-.np_card:nth-child(2){
-    grid-column: 2;
-    grid-row: 1;
-}
-
-/* bottom-right */
-.np_card:nth-child(3){
-    grid-column: 2;
-    grid-row: 2;
+.np_col .np_card{
+    flex: 1 1 0;
+    overflow: hidden;
+    border-radius: var(--img-radius);
 }
 
 .img-responsive{
@@ -115,16 +112,19 @@ header{
 
 @media (max-width: 580px){
     .np_cardrows{
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
-    .np_card:nth-child(1),
-    .np_card:nth-child(2),
-    .np_card:nth-child(3){
-        grid-column: auto;
-        grid-row: auto;
+
+    .np_card-poster{
+        flex-basis: auto;
     }
-    .np_card img{
-        height: auto;              
+
+    .np_col .np_card{
+        flex: initial;        
+    }
+
+    .img-responsive{
+        height: auto;
     }
 }
 
