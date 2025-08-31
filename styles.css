@@ -1,0 +1,17 @@
+:root{
+    --main-bg:#2E083D;
+    --nav-bg:#000;
+    --text-color: white;
+}
+/* CSS reset */
+*, *::before, *::after { box-sizing: border-box; } 
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--main-bg)
+}
+
+header{
+    background: var(--nav-bg);
+}
