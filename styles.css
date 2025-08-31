@@ -17,7 +17,7 @@ header{
     background: var(--nav-bg);
 }
 
-.nav_container{
+.header__container{
     display: flex;
     margin: 0 auto;
     padding: 0 2em;
@@ -25,21 +25,39 @@ header{
     justify-content: space-between;
 }
 
-.logo{
+.header_logo{
     width: auto;
 }
 
-.signin{
+.header_sign-in{
     width: auto;
 }
 
-.signin a{
+.header_sign-in a{
     color: var(--text-color);
     margin-left: auto;
     text-decoration: none;
     opacity: .9;
 }
 
-.signin a:hover{
+.header_sign-in a:hover{
     opacity: 1;
+}
+
+.hero{
+    position: relative;
+    padding: 2em 2em;
+    background: var(--main-bg);
+    width: 100%;
+}
+
+.hero__container{
+    display: grid;
+    align-items: center;
+}
+
+.hero picture, .hero img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
