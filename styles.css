@@ -18,11 +18,15 @@ body{
 header{
     background: var(--nav-bg);
 }
+/* Container rules */
+.header__container,.hero_container,.now-playing__container{
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
 
 .header__container{
     display: flex;
-    margin: 0 auto;
-    padding: 0 2em;
     align-items: center;
     justify-content: space-between;
 }
@@ -61,6 +65,41 @@ header{
 .hero picture, .hero img{
     width: 100%;
     height: auto;
+    display: block;
     border-radius: var(--img-radius);
+}
+
+.now-playing__container{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    
+}
+
+.np_header{
+    margin-bottom: 12px;
+}
+
+.np_header h2{
+    color: var(--text-color);
+}
+
+.np_card{
+    flex: 1 1 calc(33.333% - 16px);
+    min-width: 0;
+    padding: 0 ;                
+    border-radius: var(--img-radius);
+    display: flex;
+    margin: 1em
+}
+
+.img-responsive{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--img-radius);
+}
+@media (max-width: 580px){
+    .np_card{ flex: 1 1 100%;}
 }
 
