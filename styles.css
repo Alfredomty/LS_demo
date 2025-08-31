@@ -29,6 +29,16 @@ header{
 }
 
 .signin{
+    width: auto;
+}
+
+.signin a{
     color: var(--text-color);
     margin-left: auto;
+    text-decoration: none;
+    opacity: .9;
+}
+
+.signin a:hover{
+    opacity: 1;
 }
