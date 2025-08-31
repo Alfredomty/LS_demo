@@ -2,6 +2,8 @@
     --main-bg:#2E083D;
     --nav-bg:#000;
     --text-color: white;
+    --img-radius: 6px;
+    --mobile-bp: 580px;
 }
 /* CSS reset */
 *, *::before, *::after { box-sizing: border-box; } 
@@ -10,7 +12,7 @@ html,body{height: 100%}
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--main-bg)
+    background: var(--main-bg);
 }
 
 header{
@@ -52,12 +54,13 @@ header{
 }
 
 .hero__container{
-    display: grid;
+    display: block;
     align-items: center;
 }
 
 .hero picture, .hero img{
-    display: block;
     width: 100%;
     height: auto;
+    border-radius: var(--img-radius);
 }
+

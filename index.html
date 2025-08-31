@@ -22,16 +22,34 @@
             <div class="header_sign-in" id="signin"><a href="#signin">Sign in</a></div>
         </div>
      </header>
+
      <main>
-        <section class="hero" id="hero">
+        <section id="hero" class="hero">
             <div class="hero__container">
                 <picture>
                     <source media="(max-width: 580px )" srcset="./static_images/mobile_hero.jpg">
                     <img class="hero_responsive" src="./static_images/desktop_hero.jpg" alt="Featured show">
                 </picture>
             </div>
-            
         </section>
+
+        <section id="now-playing" aria-labelledby="now-playing_h">
+            <div class="now-playing__container">
+                <div class="np_header">
+                    <h2 id="now-playing_h">Now Playing</h2>
+                </div>
+                <article class="np_card" aria-label="Now Playing Card 1">
+                    <img src="./static_images/2308_01_now_playing.jpg" alt="Only murderers in the building" class="img-responsive">
+                </article>
+                <article class="np_card" aria-label="Now Playing Card 2">
+                    <img src="./static_images/2308_02_now_playing.jpg" alt="YellowJackets" class="img-responsive">
+                </article>
+                <article class="np_card" aria-label="Now Playing Card 3">
+                    <img src="./static_images/2308_03_now_playing.jpg" alt="Stranger Things" class="img-responsive">
+                </article>
+            </div>
+        </section>
+
      </main>
 </body>
 </html>
