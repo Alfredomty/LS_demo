@@ -52,7 +52,7 @@ header{ background: var(--nav-bg); }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: clamp(0.75rem, 2.5vw, 1.25rem);
+    padding-block: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 .navbar_logo img{
     display: block;
@@ -128,9 +128,10 @@ header{ background: var(--nav-bg); }
 .sch-card{
     flex: 0 0 auto;
     width: var(--sch-card-w);
-    display: flex; flex-direction :column;
+    display: flex; flex-direction: column;
     border-radius: var(--radius-1);
     scroll-snap-align: start;
+    transition: all 0.2s;
 }
 .sch-card img{
     width: 100%;
