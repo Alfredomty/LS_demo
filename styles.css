@@ -1,5 +1,6 @@
 :root{
     --main-bg:#2E083D;
+    --max-width: 1620px;
     --nav-bg:#000;
     --text-color: white;
     --img-radius: 6px;
@@ -22,7 +23,7 @@ header{
 }
 
 .container{
-    max-width: 1620px;
+    max-width: var(--max-width);
     margin : 0 0 2em ;
     padding: 0 1em;
 }
@@ -143,15 +144,20 @@ header{
 
 .schedule_scroller::-webkit-scrollbar{ height:8px; background:#000; }
 .schedule_scroller::-webkit-scrollbar-thumb{
-  background: linear-gradient(90deg,#FF5C00,#CB2DFF);
-  border-radius:999px;
+    background: linear-gradient(90deg,#FF5C00,#CB2DFF);
+    border-radius:999px;
 }
 
 /* FOOTER */
 
-footer {
-padding: 24px 0 40px; color: var(--muted); font-size: 14px; text-align: center;
+.about__container {
+    display: flex;
+    color: var(--muted); 
+    font-size: 14px; 
+    align-items: center;
+    
 }
+
 @media (max-width: 580px){
     .np_cardrows{flex-direction: column;}
     .np_card-poster{flex-basis: auto;}
