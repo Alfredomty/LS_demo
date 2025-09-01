@@ -30,6 +30,7 @@ body{
     min-height: 100dvh;            /* sticky footer */
     display: flex; flex-direction: column;
     font-family: Arial;
+    font-size: 1.2em;
     line-height: 1.5;
     background: var(--main-bg);
     color: var(--text-color);
@@ -82,11 +83,11 @@ header{ background: var(--nav-bg); }
 /* NOW PLAYING */
 .now-playing__container{
     display: flex; flex-direction: column; 
-    gap: var(--space-4);
+    gap: var(--space-2);
 }
 .np_cardrows{
     display: flex;
-    gap: var(--space-3); 
+    gap: var(--space-2); 
     align-items: stretch;
 }
 .np_card-poster{
@@ -97,7 +98,7 @@ header{ background: var(--nav-bg); }
 }
 .np_col{
     display: flex; flex-direction: column; 
-    gap: var(--space-3);
+    gap: var(--space-2);
     flex: 1 1 auto;
 }
 .np_col .np_card{
@@ -114,7 +115,7 @@ header{ background: var(--nav-bg); }
 /* TOMORROW'S SCHEDULE */
 .schedule__container{
     display: flex; flex-direction: column; 
-    gap:var(--space-3); 
+    gap:var(--space-2); 
 }
 .schedule_scroller{
     display: flex; gap :var(--space-3);
