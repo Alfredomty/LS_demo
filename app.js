@@ -5,6 +5,7 @@ function getTomorrowDateStr(){
     const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
     const date = String(tomorrow.getDate()).padStart(2, '0');
 
+    console.log(`${year}-${month}-${date}`);
     return `${year}-${month}-${date}`;
 }
     
@@ -19,18 +20,17 @@ function createShowCard(item){
         'https://placehold.co/600x400'
     
     const card = document.createElement('article');
-    card.className('sch-card');
+    card.className = 'sch-card';
     card.innerHTML = `
         <img class="thumbnail" src="${img}" alt="Poster for ${title}" />
-        <div class="sch-meta">${time} · ${network}</div>
-        </div>
+        <div class="sch-meta"></div>
         `;
     return card;
 }
 
 $(function(){
     const dateStr = getTomorrowDateStr();
-    const $row = $('#scheduleRow');
+    const $row = $('.schedule_scroller');
 
     $.ajax({
         url: `https://api.tvmaze.com/schedule`,
