@@ -165,6 +165,7 @@ footer{
 
 /* Mobile adjustments */
 @media (max-width: 580px){
+    
     .np_cardrows{ flex-direction:column; }
     .np_card-poster{ flex-basis:auto; }
     .np_col .np_card{ flex:initial; }
