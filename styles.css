@@ -21,37 +21,35 @@ header{
     background: var(--nav-bg);
 }
 
-/* Container global rules */
-.header__container,.hero__container,.now-playing__container,.schedule__container{
+.container{
     max-width: 1620px;
-    margin: 0 auto;
-    padding: 0 16px;
+    margin : 0 0 2em 0;
+    padding: 0 1em;
 }
 
 /* NAVBAR */
-.header__container{
+.navbar__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
-.header_logo{
+.navbar_logo{
     width: auto;
 }
 
-.header_sign-in{
+.navbar_sign-in{
     width: auto;
 }
 
-.header_sign-in a{
+.navbar_sign-in a{
     color: var(--text-color);
     margin-left: auto;
     text-decoration: none;
     opacity: .9;
 }
 
-.header_sign-in a:hover{
+.navbar_sign-in a:hover{
     opacity: 1;
 }
 
@@ -59,12 +57,11 @@ header{
 .hero{
     position: relative;
     background: var(--main-bg);
-    padding: 2em 0 ;
     width: 100%;
 }
 
 .hero__container{
-    display: lfex;
+    display: flex;
 }
 
 .hero img{
@@ -80,7 +77,7 @@ header{
     flex-direction: column;
 }
 
-.np_header{ margin: 1em 0; }
+.np_header{ margin: 0 0 1em 0; }
 .np_header h2{ margin: 0; }
 
 .np_cardrows{
@@ -92,7 +89,7 @@ header{
 .np_card-poster{
     flex: 0 0 34%;           
     overflow: hidden;
-    /* border-radius: var(--img-radius); */
+    border-radius: var(--img-radius);
 }
 
 .np_col {
@@ -105,7 +102,7 @@ header{
 .np_col .np_card{
     flex: 1 1 0;
     overflow: hidden;
-    /* border-radius: var(--img-radius); */
+    
 }
 
 .now-playing__container{display: flex;}
