@@ -21,9 +21,10 @@ function createShowCard(item){
     
     const card = document.createElement('article');
     card.className = 'sch-card';
+    card.dataset.time = time;
+    card.dataset.network = network
     card.innerHTML = `
         <img class="thumbnail" src="${img}" alt="Poster for ${title}" />
-        <div class="sch-meta"></div>
         `;
     return card;
 }
