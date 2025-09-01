@@ -6,6 +6,7 @@
     <title>Gogglebox</title>
     <meta name="description" content="Responsive landing page with hero, Now Playing, and Schedule sections"> 
 
+    <script src="app.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -53,6 +54,13 @@
                     
                 </div>
                 
+            </div>
+        </section>
+
+        <section id="tomorrows-section" aria-labeledby = "schedule_h">
+            <div class="schedule__container">
+                <h2 id="schedule_h">Tomorrow's schedule</h2>
+                <div class="schedule_scroller" aria-live = "polite"></div>
             </div>
         </section>
 
