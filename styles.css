@@ -176,7 +176,7 @@ header{ background: var(--nav-bg); }
 /* Gradient Scrollbar */
 .schedule_scroller::-webkit-scrollbar{ height: var(--space-2); background:#000; }
 .schedule_scroller::-webkit-scrollbar-thumb{
-    width: var(--space-6);
+    width: var(--sch-card-w);
     background: linear-gradient(90deg,#FF5C00,#CB2DFF);
     border-radius: 9999px;
 }
