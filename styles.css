@@ -76,7 +76,7 @@ header{ background: var(--nav-bg); }
 
 /* HERO */
 .hero{ background: var(--main-bg); }
-/* .hero__container{ display: flex; } */
+
 .hero picture{ width: 100%; }
 .hero img{
     width: 100%;height: auto; 
@@ -204,6 +204,7 @@ footer{
 /* Mobile adjustments */
 @media (max-width: 580px){
     /* Full bleed option */
+    .hero__container{ display: flex; }
     .hero picture{
         display: flex;
         width: 100dvw;                         
