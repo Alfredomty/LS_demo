@@ -130,6 +130,10 @@ header{ background: var(--nav-bg); }
     scroll-snap-type: x mandatory;    
     padding-block-end: var(--space-3);
     box-sizing: content-box;
+
+    /* Firefox and non-webkit fallback */
+    scrollbar-width: var(--space-6);
+    scrollbar-color: #CB2DFF
 }
 .sch-card{
     position: relative;
@@ -180,6 +184,8 @@ header{ background: var(--nav-bg); }
     background: linear-gradient(90deg,#FF5C00,#CB2DFF);
     border-radius: 9999px;
 }
+
+
 
 /* FOOTER */
 footer{
