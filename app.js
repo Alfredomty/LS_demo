@@ -17,7 +17,7 @@ function createShowCard(item){
         || (show.webChannel && show.webChannel.name) || '—';
     const img = (show.image && (show.image.medium || show.image.original)) ||
         (item.image && (item.image.medium || item.image.original)) ||
-        'https://placehold.co/600x400'
+        'https://placehold.co/400x400?text=No\n Image'
     
     const card = document.createElement('article');
     card.className = 'sch-card';
