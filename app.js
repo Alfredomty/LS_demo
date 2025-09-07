@@ -24,7 +24,8 @@ function createShowCard(item){
     card.dataset.time = time;
     card.dataset.network = network
     card.innerHTML = `
-        <img class="thumbnail" src="${img}" alt="Poster for ${title}" />
+        <img class="thumbnail" src="${img}" alt="Poster for ${title}" 
+        width="600" height="900"/>
         `;
     return card;
 }
